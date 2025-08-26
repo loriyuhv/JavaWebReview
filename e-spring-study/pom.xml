@@ -12,6 +12,7 @@
         <module>spring-00-demo</module>
         <module>spring-01-quickstart01-IoC</module>
         <module>spring-01-quickstart02-DI</module>
+        <module>spring-02-bean-config</module>
     </modules>
 
     <!-- 集中定义依赖版本号，使用属性 -->
