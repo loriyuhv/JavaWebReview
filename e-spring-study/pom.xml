@@ -23,6 +23,7 @@
         <module>spring-08-di-collection</module>
         <module>spring-09-datasource</module>
         <module>spring-10-container</module>
+        <module>spring-11-annotation-bean</module>
     </modules>
 
     <!-- 集中定义依赖版本号，使用属性 -->

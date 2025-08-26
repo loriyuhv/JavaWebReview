@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- 注解开发（Spring2.5）：步骤1:删除原XML配置 -->
+    <!-- <bean id="bookDao" class="com.wsw.dao.impl.BookDaoImpl"/> -->
+    <!-- <bean id="bookService" class="com.wsw.service.impl.BookServiceImpl"/> -->
+
+    <!-- 注解开发（Spring2.5）：步骤3:配置Spring的注解包扫描 -->
+    <context:component-scan base-package="com.wsw"/>
+
+    <!-- 纯注解开发（Spring3.0）：步骤3:用注解替换包扫描配置 -->
+    <!-- <context:component-scan base-package="com.wsw"/> -->
+
+</beans>
