@@ -16,6 +16,7 @@
         <module>spring-03-bean-instance01</module>
         <module>spring-03-bean-instance02</module>
         <module>spring-03-bean-instance03</module>
+        <module>spring-04-bean-lifecycle</module>
     </modules>
 
     <!-- 集中定义依赖版本号，使用属性 -->
