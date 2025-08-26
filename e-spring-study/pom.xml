@@ -19,6 +19,7 @@
         <module>spring-04-bean-lifecycle</module>
         <module>spring-05-di-set</module>
         <module>spring-06-di-constructor</module>
+        <module>spring-07-di-autowire</module>
     </modules>
 
     <!-- 集中定义依赖版本号，使用属性 -->
