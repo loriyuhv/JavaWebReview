@@ -25,6 +25,7 @@
         <module>spring-10-container</module>
         <module>spring-11-annotation-bean</module>
         <module>spring-12-annotation-bean-manager</module>
+        <module>spring-13-annotation-di</module>
     </modules>
 
     <!-- 集中定义依赖版本号，使用属性 -->
