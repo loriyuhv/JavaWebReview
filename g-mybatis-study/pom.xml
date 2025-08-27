@@ -15,6 +15,7 @@
     </modules>
 
     <properties>
+        <logback.version>1.5.18</logback.version>
         <lombok.version>1.18.38</lombok.version>
         <mybatis.version>3.5.19</mybatis.version>
         <junit.jupiter.version>5.13.4</junit.jupiter.version>
@@ -50,6 +51,13 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
+            </dependency>
+            <!-- 引入LogBack依赖，这个日志框架实现类SLF4J规范 -->
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback.version}</version>
+                <scope>compile</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
