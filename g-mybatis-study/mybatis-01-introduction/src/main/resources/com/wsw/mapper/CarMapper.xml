@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 第四步：编写XxxMapper.xml文件 -->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="loriyuhv">
+    <insert id="insertCar">
+        INSERT INTO t_car (car_num, brand, guide_price, produce_time, car_type)
+        VALUES ('CAR006', '奔驰', 525000.00, '2025-11-11', '燃油车');
+    </insert>
+</mapper>
