@@ -11,6 +11,7 @@
     <modules>
         <module>mybatis-99-case01-ocp</module>
         <module>mybatis-01-introduction</module>
+        <module>mybatis-01-z-junit-test</module>
     </modules>
 
     <properties>
