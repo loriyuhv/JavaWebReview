@@ -28,6 +28,7 @@
         <module>spring-13-annotation-di</module>
         <module>spring-14-annotation-third-bean-manager</module>
         <module>spring-15-mybatis01</module>
+        <module>spring-15-mybatis02</module>
     </modules>
 
     <!-- 集中定义依赖版本号，使用属性 -->
