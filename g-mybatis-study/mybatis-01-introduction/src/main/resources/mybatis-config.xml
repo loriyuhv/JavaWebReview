@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 第三步： 编写MyBatis核心配置文件-->
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- <settings> -->
+        <!-- 开启MyBatis对标准日志的实现 -->
+        <!-- <setting name="logImpl" value="SLF4J"/> -->
+    <!-- </settings> -->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis_db"/>
+                <property name="username" value="root"/>
+                <property name="password" value="0420"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- 第五步：在mybatis-config.xml文件中指定XxxxMapper.xml文件的路径 -->
+    <mappers>
+        <!-- 注意：resource属性会自动从类的根路径下开始查找资源。 -->
+        <mapper resource="com/wsw/mapper/CarMapper.xml"/>
+        <!-- url属性：从绝对路径加载资源（不建议，可移植性差） -->
+        <!-- <mapper url="file:///F:/Repositories/javaweb-review/g-mybatis-study/mybatis-01-introduction/src/main/resources/mybatis-config.xml"/> -->
+    </mappers>
+</configuration>

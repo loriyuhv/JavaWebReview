@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 方式三：使用实例工厂实例化Bean -->
+    <!-- <bean id="userDaoFactory" class="com.wsw.factory.UserDaoFactory"/> -->
+    <!-- <bean id="userDao" factory-bean="userDaoFactory" factory-method="getUserDao"/> -->
+
+    <!-- 方式四：方式三的改良版本 -->
+    <bean id="userDao" class="com.wsw.factory.UserDaoFactoryBean"/>
+</beans>
