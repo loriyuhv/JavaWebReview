@@ -31,6 +31,7 @@
         <module>spring-15-mybatis02</module>
         <module>spring-15-spring-mybatis</module>
         <module>spring-16-spring-junit</module>
+        <module>spring-17-aop-demo</module>
     </modules>
 
     <!-- 集中定义依赖版本号，使用属性 -->
