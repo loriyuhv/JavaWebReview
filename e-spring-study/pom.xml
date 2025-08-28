@@ -34,6 +34,7 @@
         <module>spring-17-aop-demo</module>
         <module>spring-18-aop-quickstart</module>
         <module>spring-19-aop-pointcut</module>
+        <module>spring-20-aop-advice-type</module>
     </modules>
 
     <!-- 集中定义依赖版本号，使用属性 -->
