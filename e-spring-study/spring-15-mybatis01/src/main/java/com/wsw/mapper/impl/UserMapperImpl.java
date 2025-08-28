@@ -20,7 +20,9 @@ public class UserMapperImpl implements UserMapper {
         int count;
         SqlSession sqlSession = null;
         try {
+            // 4. 获取SqlSession
             sqlSession = MyBatisUtil.getSqlSession();
+            // 5. 执行SqlSession对象执行查询，获取结果User
             count = sqlSession.insert("MySQL84.insertUser", user);
             sqlSession.commit();
         } catch (Exception e) {
@@ -28,6 +30,7 @@ public class UserMapperImpl implements UserMapper {
             log.error(e.getMessage(), e);
             MyBatisUtil.rollbackSqlSession(sqlSession);
         } finally {
+            // 6. 释放资源
             MyBatisUtil.closeSqlSession(sqlSession);
         }
         return count;
