@@ -33,6 +33,7 @@
         <module>spring-16-spring-junit</module>
         <module>spring-17-aop-demo</module>
         <module>spring-18-aop-quickstart</module>
+        <module>spring-19-aop-pointcut</module>
     </modules>
 
     <!-- 集中定义依赖版本号，使用属性 -->
