@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>maven-02-java-se</module>
+        <module>maven-03-java-web</module>
     </modules>
 
     <properties>
