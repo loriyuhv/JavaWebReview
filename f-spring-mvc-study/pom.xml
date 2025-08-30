@@ -14,6 +14,7 @@
         <module>springmvc-02-bean-load</module>
         <module>springmvc-03-request-mapping</module>
         <module>springmvc-04-request-param</module>
+        <module>springmvc-05-request-response</module>
     </modules>
 
     <properties>
