@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>springmvc-00-demo</module>
+        <module>springmvc-01-quickstart</module>
     </modules>
 
     <properties>
