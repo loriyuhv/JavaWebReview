@@ -12,6 +12,7 @@
         <module>springmvc-00-demo</module>
         <module>springmvc-01-quickstart</module>
         <module>springmvc-02-bean-load</module>
+        <module>springmvc-03-request-mapping</module>
     </modules>
 
     <properties>
