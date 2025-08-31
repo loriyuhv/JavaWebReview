@@ -17,6 +17,7 @@
         <module>springmvc-05-request-response</module>
         <module>springmvc-06-rest</module>
         <module>springmvc-07-rest-case</module>
+        <module>springmvc-08-ssm</module>
     </modules>
 
     <properties>
@@ -97,6 +98,19 @@
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
                 <version>${logback.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit.jupiter.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
