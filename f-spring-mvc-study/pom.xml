@@ -16,6 +16,7 @@
         <module>springmvc-04-request-param</module>
         <module>springmvc-05-request-response</module>
         <module>springmvc-06-rest</module>
+        <module>springmvc-07-rest-case</module>
     </modules>
 
     <properties>
