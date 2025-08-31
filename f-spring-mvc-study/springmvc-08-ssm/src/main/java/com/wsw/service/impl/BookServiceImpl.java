@@ -4,6 +4,7 @@ import com.wsw.dao.BookDao;
 import com.wsw.domain.Book;
 import com.wsw.service.BookService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -13,6 +14,7 @@ import java.util.List;
  * @description
  */
 @Service
+@Transactional
 public class BookServiceImpl implements BookService {
     private final BookDao bookDao;
 
