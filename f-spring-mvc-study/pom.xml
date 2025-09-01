@@ -20,6 +20,7 @@
         <module>springmvc-08-ssm</module>
         <module>springmvc-09-result</module>
         <module>springmvc-10-exception</module>
+        <module>springmvc-11-page</module>
     </modules>
 
     <properties>
