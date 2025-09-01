@@ -21,6 +21,7 @@
         <module>springmvc-09-result</module>
         <module>springmvc-10-exception</module>
         <module>springmvc-11-page</module>
+        <module>springmvc-12-interceptor</module>
     </modules>
 
     <properties>
