@@ -1,0 +1,13 @@
+lesson: SpringBoot
+
+server:
+  port: 8080
+
+enterprise:
+  name: wsw
+  age: 18
+  tel: 18370508206
+  subjects:
+    - Java
+    - C
+    - Python
