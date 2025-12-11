@@ -4,6 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
+		<!-- 单击进不去，可以重新导入该Maven项目以下 -->
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.5.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
