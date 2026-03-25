@@ -7,16 +7,15 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 /**
  * @author loriyuhv
- * @date 2025/8/28 19:20
- * @description
+ * @version 1.0 2025/8/28 19:20
  */
 public class App {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
         BookDao bookDao = context.getBean(BookDao.class);
-        // bookDao.save();
-        // bookDao.update();
-        // bookDao.select();
+        bookDao.save();
+        bookDao.update();
+        bookDao.select();
         bookDao.delete();
         System.out.println(bookDao.getClass());
     }
