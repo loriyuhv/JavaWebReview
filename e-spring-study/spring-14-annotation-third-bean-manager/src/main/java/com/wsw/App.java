@@ -9,8 +9,7 @@ import javax.sql.DataSource;
 
 /**
  * @author loriyuhv
- * @date 2025/8/26 21:56
- * @description
+ * @version 1.0 2025/8/26 21:56
  */
 public class App {
     public static void main(String[] args) {
