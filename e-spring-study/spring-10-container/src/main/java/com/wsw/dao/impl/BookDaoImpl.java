@@ -4,8 +4,7 @@ import com.wsw.dao.BookDao;
 
 /**
  * @author loriyuhv
- * @date 2025/8/26 17:42
- * @description
+ * @version 1.0 2025/8/26 17:42
  */
 public class BookDaoImpl implements BookDao {
 

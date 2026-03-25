@@ -8,9 +8,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 
 /**
+ * 使用BeanFactory加载容器
+ *
  * @author loriyuhv
- * @date 2025/8/26 18:23
- * @description 使用BeanFactory加载容器
+ * @version 1.0 2025/8/26 18:23
  */
 public class AppForBeanFactory {
     public static void main(String[] args) {
