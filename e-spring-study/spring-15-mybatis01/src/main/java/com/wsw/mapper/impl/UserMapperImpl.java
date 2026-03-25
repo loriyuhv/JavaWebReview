@@ -9,8 +9,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * @author loriyuhv
- * @date 2025/8/27 21:09
- * @description
+ * @version 1.0 2025/8/27 21:09
  */
 public class UserMapperImpl implements UserMapper {
     private static final Logger log = LoggerFactory.getLogger(UserMapperImpl.class);

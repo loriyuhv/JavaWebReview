@@ -4,8 +4,7 @@ import com.wsw.domain.User;
 
 /**
  * @author loriyuhv
- * @date 2025/8/27 21:09
- * @description
+ * @version 1.0 2025/8/27 21:09
  */
 public interface UserMapper {
     int insertUser(User user);

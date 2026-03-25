@@ -12,8 +12,7 @@ import java.io.InputStream;
 
 /**
  * @author loriyuhv
- * @date 2025/8/27 21:09
- * @description
+ * @version 1.0 2025/8/27 21:09
  */
 public class MyBatisUtil {
     private static final Logger log = LoggerFactory.getLogger(MyBatisUtil.class);
@@ -38,13 +37,13 @@ public class MyBatisUtil {
         return sqlSessionFactory.openSession();
     }
 
+    // 5. 释放资源
     public static void closeSqlSession(SqlSession sqlSession) {
         if (sqlSession != null) {
             sqlSession.close();
         }
     }
 
-    // 6. 释放资源
     public static void rollbackSqlSession(SqlSession sqlSession) {
         if (sqlSession != null) {
             sqlSession.rollback();

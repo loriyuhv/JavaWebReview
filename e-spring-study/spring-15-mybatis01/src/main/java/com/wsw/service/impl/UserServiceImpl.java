@@ -7,8 +7,7 @@ import com.wsw.service.UserService;
 
 /**
  * @author loriyuhv
- * @date 2025/8/27 21:17
- * @description
+ * @version 1.0 2025/8/27 21:17
  */
 public class UserServiceImpl implements UserService {
     private final UserMapper userMapper = new UserMapperImpl();
