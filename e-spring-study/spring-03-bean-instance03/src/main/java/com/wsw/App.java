@@ -5,9 +5,10 @@ import com.wsw.factory.UserDaoFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
+ * 通过实例工厂实例化Bean
+ *
  * @author loriyuhv
- * @date 2025/8/26 16:00
- * @description 通过实例工厂实例化Bean
+ * @version  2025/8/26 16:00
  */
 public class App {
     public static void main(String[] args) {

@@ -5,8 +5,7 @@ import com.wsw.dao.impl.UserDaoImpl;
 
 /**
  * @author loriyuhv
- * @date 2025/8/26 15:59
- * @description
+ * @version 1.0 2025/8/26 15:59
  */
 public class UserDaoFactory {
     public UserDao getUserDao() {

@@ -4,8 +4,7 @@ import com.wsw.dao.UserDao;
 
 /**
  * @author loriyuhv
- * @date 2025/8/26 15:59
- * @description
+ * @version 1.0 2025/8/26 15:59
  */
 public class UserDaoImpl implements UserDao {
     @Override
