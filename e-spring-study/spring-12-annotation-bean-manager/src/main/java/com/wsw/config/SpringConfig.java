@@ -5,8 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @author loriyuhv
- * @date 2025/8/26 21:03
- * @description
+ * @version 1.0 2025/8/26 21:03
  */
 @Configuration
 @ComponentScan("com.wsw")

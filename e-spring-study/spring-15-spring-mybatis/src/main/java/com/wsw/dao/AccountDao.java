@@ -9,8 +9,7 @@ import java.util.List;
 
 /**
  * @author loriyuhv
- * @date 2025/8/27 22:19
- * @description
+ * @version 1.0 2025/8/27 22:19
  */
 public interface AccountDao {
     @Insert("INSERT INTO tb_account (name, money) VALUES (#{name}, #{money})")

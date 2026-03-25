@@ -4,9 +4,9 @@ import com.wsw.dao.BookDao;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
+ * 通过构造方法实例化对象
  * @author loriyuhv
- * @date 2025/8/26 15:36
- * @description 通过构造方法实例化对象
+ * @version 1.0 2025/8/26 15:36
  */
 public class App {
     public static void main(String[] args) {

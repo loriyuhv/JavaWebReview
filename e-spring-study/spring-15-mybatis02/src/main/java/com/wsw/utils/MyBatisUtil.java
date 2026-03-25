@@ -12,8 +12,7 @@ import java.io.InputStream;
 
 /**
  * @author loriyuhv
- * @date 2025/8/27 21:09
- * @description
+ * @version 1.0 2025/8/27 21:09
  */
 public class MyBatisUtil {
     private static final Logger log = LoggerFactory.getLogger(MyBatisUtil.class);

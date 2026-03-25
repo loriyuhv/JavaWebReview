@@ -7,8 +7,7 @@ import org.springframework.context.annotation.PropertySource;
 
 /**
  * @author loriyuhv
- * @date 2025/8/26 21:56
- * @description
+ * @version 1.0 2025/8/26 21:56
  */
 @Configuration
 @ComponentScan("com.wsw")

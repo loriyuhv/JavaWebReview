@@ -4,8 +4,7 @@ import lombok.Data;
 
 /**
  * @author loriyuhv
- * @date 2025/8/28 12:17
- * @description
+ * @version 1.0 2025/8/28 12:17
  */
 @Data
 public class Account {

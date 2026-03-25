@@ -9,8 +9,7 @@ import javax.sql.DataSource;
 
 /**
  * @author loriyuhv
- * @date 2025/8/26 22:02
- * @description
+ * @version 1.0 2025/8/26 22:02
  */
 public class JDBCConfig {
     @Value("${jdbc.driver}")

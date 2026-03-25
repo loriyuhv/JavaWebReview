@@ -10,8 +10,7 @@ import java.util.List;
 
 /**
  * @author loriyuhv
- * @date 2025/8/28 0:22
- * @description
+ * @version 1.0 2025/8/28 0:22
  */
 public class App {
     public static void main(String[] args) {

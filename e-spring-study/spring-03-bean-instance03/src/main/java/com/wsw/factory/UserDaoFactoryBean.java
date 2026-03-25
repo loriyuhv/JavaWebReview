@@ -6,8 +6,7 @@ import org.springframework.beans.factory.FactoryBean;
 
 /**
  * @author loriyuhv
- * @date 2025/8/26 16:05
- * @description
+ * @version 1.0 2025/8/26 16:05
  */
 public class UserDaoFactoryBean implements FactoryBean<UserDao> {
     // 代替原始实例工厂中创建对象的方法

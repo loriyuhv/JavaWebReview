@@ -5,9 +5,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 /**
+ * Spring容器创建的两种方式
+ *
  * @author loriyuhv
- * @date 2025/8/26 17:43
- * @description Spring容器创建的两种方式
+ * @version 1.0 2025/8/26 17:43
  */
 public class AppForCreateContainer {
     public static void main(String[] args) {

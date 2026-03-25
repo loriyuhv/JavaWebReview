@@ -5,8 +5,7 @@ import com.wsw.dao.impl.OrderDaoImpl;
 
 /**
  * @author loriyuhv
- * @date 2025/8/26 15:46
- * @description
+ * @version 1.0 2025/8/26 15:46
  */
 public class OrderDaoFactory {
     public static OrderDao getOrderDao() {

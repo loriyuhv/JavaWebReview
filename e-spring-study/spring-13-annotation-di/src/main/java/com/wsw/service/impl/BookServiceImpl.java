@@ -9,8 +9,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * @author loriyuhv
- * @date 2025/8/26 21:37
- * @description
+ * @version 1.0 2025/8/26 21:37
  */
 @Service
 public class BookServiceImpl implements BookService {

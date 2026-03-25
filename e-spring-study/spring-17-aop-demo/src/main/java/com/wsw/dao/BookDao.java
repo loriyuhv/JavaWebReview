@@ -2,8 +2,7 @@ package com.wsw.dao;
 
 /**
  * @author loriyuhv
- * @date 2025/8/28 12:54
- * @description
+ * @version 1.0 2025/8/28 12:54
  */
 public interface BookDao {
     void save();

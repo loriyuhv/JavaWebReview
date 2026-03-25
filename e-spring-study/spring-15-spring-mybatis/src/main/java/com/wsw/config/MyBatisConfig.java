@@ -10,8 +10,7 @@ import javax.sql.DataSource;
 
 /**
  * @author loriyuhv
- * @date 2025/8/28 0:16
- * @description
+ * @version 1.0 2025/8/28 0:16
  */
 public class MyBatisConfig {
     // 定义bean，SqlSessionFactoryBean，用于产生SqlSessionFactory对象

@@ -4,8 +4,7 @@ import com.wsw.domain.User;
 
 /**
  * @author loriyuhv
- * @date 2025/8/27 21:17
- * @description
+ * @version 1.0 2025/8/27 21:17
  */
 public interface UserService {
     int insertUser(User user);

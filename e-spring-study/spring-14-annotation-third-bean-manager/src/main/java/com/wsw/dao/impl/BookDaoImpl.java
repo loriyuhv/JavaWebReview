@@ -5,8 +5,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  * @author loriyuhv
- * @date 2025/8/26 21:55
- * @description
+ * @version 1.0 2025/8/26 21:55
  */
 @Repository
 public class BookDaoImpl implements BookDao {

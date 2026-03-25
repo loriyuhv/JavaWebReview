@@ -17,7 +17,7 @@ class AccountServiceTest {
 
     @Test
     void findById() {
-        Account account = accountService.findById(2);
+        Account account = accountService.findById(1);
         System.out.println(account);
         assertNotNull(account);
     }

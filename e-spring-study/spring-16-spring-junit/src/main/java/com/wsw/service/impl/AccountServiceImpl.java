@@ -7,8 +7,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * @author loriyuhv
- * @date 2025/8/28 12:29
- * @description
+ * @version 1.0 2025/8/28 12:29
  */
 @Service
 public class AccountServiceImpl implements AccountService {

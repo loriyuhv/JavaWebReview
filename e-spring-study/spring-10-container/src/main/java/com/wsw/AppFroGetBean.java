@@ -4,9 +4,10 @@ import com.wsw.dao.BookDao;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
+ * Bean的获取三种方式
+ *
  * @author loriyuhv
- * @date 2025/8/26 18:19
- * @description Bean的获取三种方式
+ * @version 1.0 2025/8/26 18:19
  */
 public class AppFroGetBean {
     public static void main(String[] args) {
