@@ -5,8 +5,7 @@ import org.apache.ibatis.annotations.Select;
 
 /**
  * @author loriyuhv
- * @date 2025/8/28 12:18
- * @description
+ * @version 1.0 2025/8/28 12:18
  */
 public interface AccountDao {
     @Select("SELECT * FROM tb_account WHERE id = #{id}")
