@@ -5,9 +5,10 @@ import com.wsw.service.BookService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
+ * 注解开发（Spring2.5）：步骤4：运行程序
+ *
  * @author loriyuhv
- * @date 2025/8/26 20:25
- * @description 注解开发（Spring2.5）：步骤4：运行程序
+ * @version 1.0 2025/8/26 20:25
  */
 public class AppForXml {
     public static void main(String[] args) {

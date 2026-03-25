@@ -5,8 +5,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * @author loriyuhv
- * @date 2025/8/26 20:23
- * @description
+ * @version 1.0 2025/8/26 20:23
  */
 // 注解开发（Spring2.5）：步骤5: Service上添加注解
 @Component

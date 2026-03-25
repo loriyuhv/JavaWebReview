@@ -7,9 +7,10 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
+ * 纯注解开发（Spring3.0）：步骤4:创建运行类并执行
+ *
  * @author loriyuhv
- * @date 2025/8/26 20:42
- * @description 纯注解开发（Spring3.0）：步骤4:创建运行类并执行
+ * @version 1.0 2025/8/26 20:42
  */
 public class AppForAnnotation {
     public static void main(String[] args) {
