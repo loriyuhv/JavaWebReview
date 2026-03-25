@@ -5,9 +5,10 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
+ * 运行类
+ *
  * @author loriyuhv
- * @date 2025/8/26 21:04
- * @description 运行类
+ * @version 1.0 2025/8/26 21:04
  */
 public class App {
     public static void main(String[] args) {

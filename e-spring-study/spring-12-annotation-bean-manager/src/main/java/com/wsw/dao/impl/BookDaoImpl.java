@@ -7,13 +7,15 @@ import jakarta.annotation.PreDestroy;
 import org.springframework.stereotype.Repository;
 
 /**
+ * <p>注意：为什么 @PreDestroy 在 prototype 作用域下不生效？</p>
+ * <p>
+ *     Spring容器管理的生命周期：
+ *     <li>对于 singleton 作用域的 Bean，Spring 容器负责创建和销毁。因此，@PreDestroy 注解在容器关闭时被调用。</li>
+ *     <li>对于 prototype 作用域的 Bean，Spring 容器只负责创建 Bean，但不负责销毁。因此，@PreDestroy 注解不会被调用。</li>
+ * </p>
  * @author loriyuhv
- * @date 2025/8/26 21:03
- * @description
- * 注意：为什么 @PreDestroy 在 prototype 作用域下不生效？
- * Spring容器管理的生命周期：
- * 对于 singleton 作用域的 Bean，Spring 容器负责创建和销毁。因此，@PreDestroy 注解在容器关闭时被调用。
- * 对于 prototype 作用域的 Bean，Spring 容器只负责创建 Bean，但不负责销毁。因此，@PreDestroy 注解不会被调用。
+ * @version 1.0 2025/8/26 21:03
+ *
  */
 @Repository
 // Scope注解：配置bean的作用范围：prototype：原型 singleton：单例（默认）
