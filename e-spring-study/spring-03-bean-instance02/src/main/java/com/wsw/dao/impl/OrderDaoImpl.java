@@ -4,8 +4,7 @@ import com.wsw.dao.OrderDao;
 
 /**
  * @author loriyuhv
- * @date 2025/8/26 15:36
- * @description
+ * @version 1.0 2025/8/26 15:36
  */
 public class OrderDaoImpl implements OrderDao {
 
