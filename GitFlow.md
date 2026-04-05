@@ -200,3 +200,22 @@ git reset --soft HEAD^
 2. **GitLens (VSCode 扩展)**：增强的 Git 功能
 3. **Sourcetree**：免费的 Git 图形化客户端
 4. **GitKraken**：强大的跨平台 Git 客户端
+
+# 七、新环境拉取项目分支切换流程
+注：以e-spring-study为例。
+```bash
+# 1. 进入本地项目目录
+cd /path/to/your/project
+
+# 2. 同步最新远程分支信息
+git fetch origin
+
+# 3. 查看所有远程分支，确认要拉取的分支
+git branch -r
+
+# 4. 拉取 develop 分支到本地
+git checkout develop
+
+# 5. 拉取你需要的 feature 分支（按需执行）
+git checkout feature/e-spring-study
+```
