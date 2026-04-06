@@ -10,8 +10,7 @@ import java.io.PrintWriter;
 
 /**
  * @author loriyuhv
- * @date 2025/8/30 8:42
- * @description
+ * @version 1.0 2025/8/30 8:42
  */
 @WebServlet("/user/delete")
 public class UserDeleteServlet extends HttpServlet {

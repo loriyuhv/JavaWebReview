@@ -4,8 +4,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 /**
  * @author loriyuhv
- * @date 2025/8/30 8:50
- * @description
+ * @version 1.0 2025/8/30 8:50
  */
 public class ServletContainersInitConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override

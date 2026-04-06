@@ -6,8 +6,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @author loriyuhv
- * @date 2025/8/30 8:51
- * @description
+ * @version 1.0 2025/8/30 8:51
  */
 @Controller
 @RequestMapping("/users")
