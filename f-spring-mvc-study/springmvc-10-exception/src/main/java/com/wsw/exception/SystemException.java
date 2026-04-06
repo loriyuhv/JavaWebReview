@@ -4,9 +4,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
+ * 系统异常
  * @author loriyuhv
  * @date 2025/9/1 7:31
- * @description
  */
 @Getter
 @Setter
