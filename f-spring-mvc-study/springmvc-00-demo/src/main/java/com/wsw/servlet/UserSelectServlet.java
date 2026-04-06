@@ -10,8 +10,7 @@ import java.io.PrintWriter;
 
 /**
  * @author loriyuhv
- * @date 2025/8/30 8:44
- * @description
+ * @version 1.0 2025/8/30 8:44
  */
 @WebServlet("/user/select")
 public class UserSelectServlet extends HttpServlet {
