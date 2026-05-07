@@ -9,9 +9,10 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
+ * MyBatis工具类
+ *
  * @author loriyuhv
- * @date 2025/8/27 11:12
- * @description
+ * @version 1.0 2025/8/27 11:12
  */
 public class MyBatisUtil {
 

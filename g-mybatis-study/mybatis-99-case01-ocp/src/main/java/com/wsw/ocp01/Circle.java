@@ -1,9 +1,10 @@
 package com.wsw.ocp01;
 
 /**
+ * 圆形类：实现形状接口
+ *
  * @author loriyuhv
- * @date 2025/8/26 23:43
- * @description 圆形类：实现形状接口
+ * @version 1.0 2025/8/26 23:43
  */
 public class Circle implements Shape{
     @Override

@@ -9,8 +9,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * @author loriyuhv
- * @date 2025/8/27 17:07
- * @description
+ * @version 1.0 2025/8/27 17:07
  */
 public class CarDaoImpl implements CarDao {
     private static final Logger log = LoggerFactory.getLogger(CarDaoImpl.class);
