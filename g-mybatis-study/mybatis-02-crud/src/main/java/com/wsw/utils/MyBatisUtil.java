@@ -11,9 +11,10 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
+ * MyBatis工具类
+ *
  * @author loriyuhv
- * @date 2025/8/27 11:12
- * @description MyBatis工具类
+ * @version 1.0 2025/8/27 11:12
  */
 public class MyBatisUtil {
     private static final Logger log = LoggerFactory.getLogger(MyBatisUtil.class);

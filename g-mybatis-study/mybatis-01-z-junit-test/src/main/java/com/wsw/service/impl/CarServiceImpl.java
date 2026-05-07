@@ -6,8 +6,7 @@ import com.wsw.service.CarService;
 
 /**
  * @author loriyuhv
- * @date 2025/8/27 11:17
- * @description
+ * @version 1.0 2025/8/27 11:17
  */
 public class CarServiceImpl implements CarService {
     private final CarDao carDao = new CarDaoImpl();

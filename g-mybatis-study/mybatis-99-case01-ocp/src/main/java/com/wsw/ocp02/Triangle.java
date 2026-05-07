@@ -2,8 +2,7 @@ package com.wsw.ocp02;
 
 /**
  * @author loriyuhv
- * @date 2025/8/26 23:41
- * @description
+ * @version 1.0 2025/8/26 23:41
  */
 public class Triangle extends Shape {
     @Override

@@ -7,8 +7,7 @@ import java.time.LocalDate;
 
 /**
  * @author loriyuhv
- * @date 2025/8/27 9:31
- * @description
+ * @version 1.0 2025/8/27 9:31
  */
 
 @Data
