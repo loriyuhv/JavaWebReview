@@ -2,7 +2,7 @@
 
 **推荐使用功能分支工作流 (Feature Branch Workflow)**
 
-```
+```bash
 main (稳定版本)
 └── develop (集成分支)
     ├── feature/a-maven-study (功能分支)
@@ -15,22 +15,24 @@ main (稳定版本)
 
 ## 1.1 初始化设置
 
-```cmd
+```bash
 # 克隆你的空仓库（如果尚未初始化）
 git clone "仓库地址"
 cd javaweb-review
 
-# 创建并切换到开发分支
+# 创建并切换到开发分支 -b：创建新分支
 git checkout -b develop
+
 # 把开发分支提交到远程分支
 git push -u origin develop
 ```
 
 ## 1.2 开始新功能开发
 
-```cmd
+```bash
 # 确保在develop分支
 git checkout develop
+
 # 保持本地分支与远程分支信息同步
 git pull origin develop
 
@@ -40,7 +42,7 @@ git checkout -b feature/a-maven-study
 
 ## 1.3 在功能分支上开发
 
-```cmd
+```bash
 # 这一步可以用IDEA实现
 # 添加Maven模块
 mkdir a-maven-study
@@ -48,7 +50,7 @@ mkdir a-maven-study
 
 # 提交更改
 git add a-maven-study/
-git commit -m "feat: 添加Maven学习模块结构"
+git commit -m "feat(a-maven-study): 添加Maven学习模块结构"
 
 # 定期推送到远程备份
 git push -u origin feature/a-maven-study
@@ -56,7 +58,7 @@ git push -u origin feature/a-maven-study
 
 ## 1.4 完成功能后合并
 
-```cmd
+```bash
 # 切换回develop分支
 git checkout develop
 git pull origin develop
@@ -74,7 +76,7 @@ git push origin --delete feature/a-maven-study
 
 ## 1.5 发布版本
 
-```cmd
+```bash
 # 当完成一个重要阶段后，合并到main分支
 git checkout main
 git merge develop
@@ -88,7 +90,7 @@ git push origin main --tags
 
 使用约定式提交 (Conventional Commits) 规范：
 
-```cmd
+```bash
 # 功能实现
 git commit -m "feat: 添加Spring IOC容器示例"
 
@@ -109,7 +111,7 @@ git commit -m "test: 添加Spring MVC控制器测试"
 
 使用语义化版本控制 (Semantic Versioning)：
 
-```
+```bash
 # 主版本号.次版本号.修订号-描述
 git tag -a v0.1.0-a-maven-study -m "完成Maven基础学习"
 git tag -a v0.2.0-servlet-complete -m "完成Servlet学习"
@@ -124,7 +126,7 @@ git push origin --tags
 
 ## 4.1 开始新一天工作
 
-```
+```bash
 git checkout develop
 git pull origin develop
 git checkout -b feature/模块名称
@@ -132,7 +134,7 @@ git checkout -b feature/模块名称
 
 ## 4.2 工作期间
 
-```
+```bash
 # 多次小步提交
 git add .
 git commit -m "feat: 描述具体完成的工作"
@@ -143,7 +145,7 @@ git push origin feature/模块名称
 
 ## 4.3 结束一天工作
 
-```
+```bash
 # 确保所有更改已提交和推送
 git push origin feature/模块名称
 
@@ -153,7 +155,7 @@ git stash
 
 ## 4.4 完成一个功能
 
-```
+```bash
 # 合并到develop分支
 git checkout develop
 git pull origin develop
@@ -173,9 +175,10 @@ git push origin --tags
 
 ## 5.1 处理合并冲突
 
-```
+```bash
 # 发生冲突时
 git status # 查看冲突文件
+
 # 手动解决冲突后
 git add 冲突文件
 git commit -m "解决合并冲突"
@@ -183,7 +186,7 @@ git commit -m "解决合并冲突"
 
 ## 5.2 撤销更改
 
-```
+```bash
 # 撤销未暂存的更改
 git checkout -- 文件名
 
