@@ -6,8 +6,7 @@ import org.apache.ibatis.session.SqlSession;
 
 /**
  * @author loriyuhv
- * @date 2025/8/27 11:05
- * @description
+ * @version 1.0 2025/8/27 11:05
  */
 public class CarDaoImpl implements CarDao {
     @Override

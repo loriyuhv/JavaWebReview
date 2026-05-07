@@ -2,8 +2,7 @@ package com.wsw.noocp;
 
 /**
  * @author loriyuhv
- * @date 2025/8/26 23:36
- * @description
+ * @version 1.0 2025/8/26 23:36
  */
 public class Rectangle extends Shape {
 }

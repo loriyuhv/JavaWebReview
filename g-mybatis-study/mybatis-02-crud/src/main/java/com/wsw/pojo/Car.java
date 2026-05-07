@@ -4,8 +4,7 @@ import lombok.Data;
 
 /**
  * @author loriyuhv
- * @date 2025/8/27 11:09
- * @description
+ * @version 1.0 2025/8/27 11:09
  */
 @Data
 public class Car {
