@@ -1,6 +1,8 @@
 package com.wsw.dao.impl;
 
 import com.wsw.dao.CarDao;
+import com.wsw.mapper.CarMapper;
+import com.wsw.pojo.Car;
 import com.wsw.utils.MyBatisUtil;
 import org.apache.ibatis.session.SqlSession;
 
@@ -10,12 +12,13 @@ import org.apache.ibatis.session.SqlSession;
  */
 public class CarDaoImpl implements CarDao {
     @Override
-    public int insertCar() {
+    public int insertCar(Car car) {
         int count;
         SqlSession sqlSession = null;
         try {
             sqlSession = MyBatisUtil.getSqlSession();
-            count = sqlSession.insert("insertCar");
+            CarMapper carMapper = sqlSession.getMapper(CarMapper.class);
+            count = carMapper.insertCar(car);
             // int i = 2 / 0;
             sqlSession.commit();
         }  catch (Exception e) {

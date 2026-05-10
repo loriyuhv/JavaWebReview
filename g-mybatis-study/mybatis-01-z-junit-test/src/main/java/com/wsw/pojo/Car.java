@@ -1,6 +1,8 @@
 package com.wsw.pojo;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -10,6 +12,8 @@ import java.time.LocalDate;
  * @version 1.0 2025/8/27 11:09
  */
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Car {
     private Long id;
     private String carNum;
