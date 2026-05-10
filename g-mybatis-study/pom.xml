@@ -16,7 +16,7 @@
     </modules>
 
     <properties>
-        <logback.version>1.5.18</logback.version>
+        <logback.version>1.5.32</logback.version>
         <lombok.version>1.18.38</lombok.version>
         <mybatis.version>3.5.19</mybatis.version>
         <junit.jupiter.version>5.13.4</junit.jupiter.version>

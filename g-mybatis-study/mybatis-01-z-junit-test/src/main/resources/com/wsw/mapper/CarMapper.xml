@@ -2,9 +2,10 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="loriyuhv">
-    <insert id="insertCar">
+<mapper namespace="com.wsw.mapper.CarMapper">
+    <!-- 新增汽车（使用自增主键） -->
+    <insert id="insertCar" parameterType="com.wsw.mapper.CarMapper" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO t_car (car_num, brand, guide_price, produce_time, car_type)
-        VALUES ('CAR007', '奥迪', 425000.00, '2024-11-21', '燃油车');
+        VALUES (#{carNum}, #{brand}, #{guidePrice}, #{produceTime}, #{carType});
     </insert>
 </mapper>
