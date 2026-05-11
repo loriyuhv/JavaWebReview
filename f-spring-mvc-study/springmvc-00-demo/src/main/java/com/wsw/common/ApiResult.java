@@ -1,0 +1,28 @@
+package com.wsw.common;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+/**
+ * @author loriyuhv
+ * @version 1.0 2026/5/11 17:16
+ * @since 1.0
+ */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ApiResult<T> {
+    private int code;
+    private String msg;
+    private T data;
+
+    // 成功
+    public static <T> ApiResult<T> ok(T data) {
+        ApiResult<T> r = new ApiResult<>();
+        r.code = 200;
+        r.msg = "success";
+        r.data = data;
+        return r;
+    }
+}

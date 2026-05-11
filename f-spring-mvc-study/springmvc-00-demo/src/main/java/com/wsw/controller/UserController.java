@@ -1,5 +1,6 @@
 package com.wsw.controller;
 
+import com.wsw.common.ApiResult;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -13,8 +14,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class UserController {
     @ResponseBody
     @RequestMapping("/delete")
-    public String delete(String name) {
+    public ApiResult<String> delete(String name) {
         System.out.println("user controller delete name ===> " + name);
-        return "{'module':'user controller servlet delete'}";
+        return ApiResult.ok("user controller servlet delete");
     }
 }

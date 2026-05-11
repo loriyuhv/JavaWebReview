@@ -4,9 +4,10 @@ import org.springframework.context.annotation.*;
 import org.springframework.stereotype.Controller;
 
 /**
+ * Spring配置类
+ *
  * @author loriyuhv
- * @date 2025/8/30 10:24
- * @description Spring配置类
+ * @version 1.0 2025/8/30 10:24
  */
 @Configuration
 @PropertySource("classpath:jdbc.properties")

@@ -1,5 +1,6 @@
 package com.wsw.controller;
 
+import com.wsw.common.ApiResult;
 import com.wsw.pojo.User;
 import com.wsw.service.UserService;
 import org.springframework.stereotype.Controller;
@@ -9,8 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @author loriyuhv
- * @date 2025/8/30 10:27
- * @description
+ * @version 1.0 2025/8/30 10:27
  */
 @Controller
 public class UserController {
@@ -22,9 +22,11 @@ public class UserController {
 
     @ResponseBody
     @RequestMapping("/user/save")
-    public String save(@RequestBody User user) {
+    public ApiResult<String> save(@RequestBody User user) {
         System.out.println("user controller save ... user ==> " + user);
+
         Integer count = userService.save(user);
-        return count == 1 ? "{'module': 'save success!!!'}" : "{'module': 'save failed!!!'}";
+
+        return count == 1 ? ApiResult.ok("保存成功！") : ApiResult.fail("保存失败！");
     }
 }

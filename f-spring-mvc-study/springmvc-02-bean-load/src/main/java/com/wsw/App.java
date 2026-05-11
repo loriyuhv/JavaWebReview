@@ -6,10 +6,11 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
+ * 测试Spring配置类是否排除了controller包
+ * 注意：测试时，需要注释SpringMvcConfig的@Configuration注解
+ *
  * @author loriyuhv
- * @date 2025/8/30 11:30
- * @description 测试Spring配置类是否排除了controller包
- *  注意：测试时，需要注释SpringMvcConfig的@Configuration注解
+ * @version 1.0 2025/8/30 11:30
  */
 public class App {
     public static void main(String[] args) {

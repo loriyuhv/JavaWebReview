@@ -8,8 +8,7 @@ import javax.sql.DataSource;
 
 /**
  * @author loriyuhv
- * @date 2025/8/30 10:48
- * @description
+ * @version 1.0 2025/8/30 10:48
  */
 public class JDBCConfig {
     @Value("${jdbc.driver}")
