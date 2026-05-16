@@ -40,6 +40,16 @@ class BookControllerTest {
     }
 
     @Test
+    void findByName() {
+        String name = "mysql";
+        Result<List<Book>> result = bookController.findByName(name);
+        List<Book> books = result.getData();
+        for (Book book : books) {
+            System.out.println(book);
+        }
+    }
+
+    @Test
     void findAll() {
         Result<List<Book>> result = bookController.findAll();
         List<Book> books = result.getData();

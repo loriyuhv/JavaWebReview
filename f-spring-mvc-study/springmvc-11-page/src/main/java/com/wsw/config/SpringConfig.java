@@ -8,8 +8,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * @author loriyuhv
- * @date 2025/9/1 5:47
- * @description
+ * @version 1.0 2025/9/1 5:47
  */
 @Configuration
 @EnableTransactionManagement

@@ -10,8 +10,7 @@ import javax.sql.DataSource;
 
 /**
  * @author loriyuhv
- * @date 2025/9/1 5:53
- * @description
+ * @version 1.0 2025/9/1 5:53
  */
 public class MyBatisConfig {
     // 1. SqlSessionFactoryBean

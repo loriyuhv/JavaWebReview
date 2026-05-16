@@ -4,9 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**
+ * 响应结果封装类
+ *
  * @author loriyuhv
- * @date 2025/9/1 6:10
- * @description 响应结果封装类
+ * @version 1.0 2025/9/1 6:10
  */
 @Data
 @AllArgsConstructor

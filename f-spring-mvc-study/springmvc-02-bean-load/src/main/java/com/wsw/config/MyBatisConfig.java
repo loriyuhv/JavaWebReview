@@ -9,9 +9,10 @@ import org.springframework.context.annotation.Bean;
 import javax.sql.DataSource;
 
 /**
+ * MyBatis配置类
+ *
  * @author loriyuhv
- * @date 2025/8/30 10:52
- * @description MyBatis配置类
+ * @version 1.0 2025/8/30 10:52
  */
 public class MyBatisConfig {
     @Bean

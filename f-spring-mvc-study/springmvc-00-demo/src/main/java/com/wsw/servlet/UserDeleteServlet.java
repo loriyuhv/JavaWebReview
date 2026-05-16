@@ -1,12 +1,13 @@
 package com.wsw.servlet;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.wsw.common.ApiResult;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 /**
  * @author loriyuhv
@@ -19,10 +20,15 @@ public class UserDeleteServlet extends HttpServlet {
         // 1. 接收请求参数
         String name = req.getParameter("name");
         System.out.println("servlet delete name ===> " + name);
-        // 2. 产生响应
-        resp.setContentType("text/json;charset=utf-8");
-        PrintWriter out = resp.getWriter();
-        out.write("{'module':'servlet delete'}");
+
+        // 2. 设置返回 JSON
+        resp.setContentType("application/json;charset=utf-8");
+
+        // 3. 返回数据 writeValue(输出流, 对象) 自动转 JSON + 输出 + 刷新
+        new ObjectMapper().writeValue(
+                resp.getWriter(),
+                ApiResult.ok("servlet delete")
+        );
     }
 
     @Override

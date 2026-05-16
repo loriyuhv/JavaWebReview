@@ -3,7 +3,6 @@ package com.wsw.service.impl;
 import com.wsw.controller.Code;
 import com.wsw.dao.BookDao;
 import com.wsw.domain.Book;
-import com.wsw.exception.BusinessException;
 import com.wsw.exception.SystemException;
 import com.wsw.service.BookService;
 import org.springframework.stereotype.Service;
@@ -13,8 +12,7 @@ import java.util.List;
 
 /**
  * @author loriyuhv
- * @date 2025/9/1 6:03
- * @description
+ * @version 1.0 2025/9/1 6:03
  */
 @Service
 @Transactional
@@ -38,7 +36,7 @@ public class BookServiceImpl implements BookService {
     @Override
     public Integer delete(Integer id) {
         try {
-            Thread.sleep(5000);
+            Thread.sleep(10);
         } catch (Exception e) {
             throw new SystemException(Code.SYSTEM_TIME_OUT_ERR, e.getMessage());
         }
@@ -48,6 +46,11 @@ public class BookServiceImpl implements BookService {
     @Override
     public Book findById(Integer id) {
         return bookDao.findById(id);
+    }
+
+    @Override
+    public List<Book> findByName(String name) {
+        return bookDao.findByName(name);
     }
 
     @Override

@@ -10,39 +10,39 @@ import java.util.List;
 
 /**
  * @author loriyuhv
- * @date 2025/8/30 22:44
- * @description
+ * @version 1.0 2025/8/30 22:44
  */
 @Controller
 public class UserController {
     /**
-     * @description 响应页面/跳转界面
-     * 注意1：此处不能添加@ResponseBody,如果加了该注入，
-     *  会直接将page.jsp当字符串返回前端。
-     * 注意2：方法需要返回String。
+     * <p>响应页面/跳转界面</p>
+     * <ul>
+     *     <li>注意1：此处不能添加@ResponseBody,如果加了该注入，会直接将page.jsp当字符串返回前端。</li>
+     *     <li>注意2：方法需要返回String。</li>
+     * </ul>
      */
-    @RequestMapping("/toJumpPage")
+    @RequestMapping("/to-jump-page")
     public String toJumpPage() {
         System.out.println("跳转页面！！！");
-        return "page.jsp";
+        return "page";
     }
 
     /**
-     * @description 响应文本数据
+     * 响应文本数据
      */
     // 此处注解不能省略，否则会将response text当作页面名称查找，导致404错误。
     @ResponseBody
-    @RequestMapping("/toText")
+    @RequestMapping("/to-text")
     public String toText() {
         System.out.println("返回纯文本数据");
         return "response text";
     }
 
     /**
-     * @description 响应POJO对象
+     * 响应POJO对象
      */
     @ResponseBody
-    @RequestMapping("/toJsonPOJO")
+    @RequestMapping("/to-json-pojo")
     public User toJsonPOJO() {
         System.out.println("返回json对象数据");
         User user = new User();
@@ -52,10 +52,10 @@ public class UserController {
     }
 
     /**
-     * @description 响应POJO集合对象
+     * 响应POJO集合对象
      */
     @ResponseBody
-    @RequestMapping("/toJsonList")
+    @RequestMapping("/to-json-list")
     public List<User> toJsonList() {
         System.out.println("返回json集合数据");
         User user1 = new User();

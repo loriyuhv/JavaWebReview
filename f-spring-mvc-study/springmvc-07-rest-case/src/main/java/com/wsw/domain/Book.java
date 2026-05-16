@@ -3,9 +3,9 @@ package com.wsw.domain;
 import lombok.Data;
 
 /**
+ * 图书类
  * @author loriyuhv
- * @date 2025/8/31 13:20
- * @description 图书类
+ * @version 1.0 2025/8/31 13:20
  */
 @Data
 public class Book {

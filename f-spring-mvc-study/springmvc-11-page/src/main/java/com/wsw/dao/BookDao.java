@@ -5,14 +5,15 @@ import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 /**
  * @author loriyuhv
- * @date 2025/9/1 6:01
- * @description
+ * @version 1.0 2025/9/1 6:01
  */
+@Repository
 public interface BookDao {
     /**
      * 保存图书
@@ -45,6 +46,14 @@ public interface BookDao {
      */
     @Select("SELECT * FROM tb_book WHERE id = #{id};")
     Book findById(Integer id);
+
+    /**
+     * 通过图书name查找图书
+     * @param name 图书Name
+     * @return 图书对象集合
+     */
+    @Select("SELECT * FROM tb_book WHERE `name` LIKE CONCAT('%', #{name}, '%');")
+    List<Book> findByName(String name);
 
     /**
      * 查找全部图书

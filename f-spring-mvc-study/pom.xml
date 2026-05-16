@@ -25,15 +25,15 @@
     </modules>
 
     <properties>
-        <jackson.databind.version>2.19.2</jackson.databind.version>
+        <jackson.databind.version>2.21.3</jackson.databind.version>
         <servlet.version>6.0.0</servlet.version>
         <aspectjweaver.version>1.9.24</aspectjweaver.version>
         <mybatis.spring.version>3.0.5</mybatis.spring.version>
-        <logback.version>1.5.18</logback.version>
+        <logback.version>1.5.32</logback.version>
         <junit.jupiter.version>5.13.4</junit.jupiter.version>
         <lombok.version>1.18.38</lombok.version>
         <mybatis.version>3.5.19</mybatis.version>
-        <spring.version>6.2.10</spring.version>
+        <spring.version>6.2.18</spring.version>
         <mysql.verson>9.4.0</mysql.verson>
         <druid.version>1.2.27</druid.version>
         <maven.compiler.source>17</maven.compiler.source>
