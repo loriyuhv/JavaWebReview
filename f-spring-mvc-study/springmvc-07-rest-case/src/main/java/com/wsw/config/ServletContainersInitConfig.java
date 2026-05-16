@@ -1,11 +1,11 @@
 package com.wsw.config;
 
+import org.springframework.lang.NonNull;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
  * @author loriyuhv
- * @date 2025/8/31 13:21
- * @description
+ * @version 1.0 2025/8/31 13:21
  */
 public class ServletContainersInitConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
@@ -19,7 +19,7 @@ public class ServletContainersInitConfig extends AbstractAnnotationConfigDispatc
     }
 
     @Override
-    protected String[] getServletMappings() {
+    protected @NonNull String[] getServletMappings() {
         return new String[]{"/"};
     }
 }

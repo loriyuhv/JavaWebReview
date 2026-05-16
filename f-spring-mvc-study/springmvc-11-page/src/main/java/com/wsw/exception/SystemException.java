@@ -5,8 +5,7 @@ import lombok.Setter;
 
 /**
  * @author loriyuhv
- * @date 2025/9/1 8:34
- * @description
+ * @version 1.0 2025/9/1 8:34
  */
 @Getter
 @Setter

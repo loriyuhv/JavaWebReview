@@ -1,60 +1,60 @@
 package com.wsw.controller;
 
+import com.wsw.common.ApiResult;
 import com.wsw.domain.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 /**
  * @author loriyuhv
- * @date 2025/8/31 12:46
- * @description
+ * @version 1.0 2025/8/31 12:46
  */
 @Controller
 public class UserController {
     /**
-     * @description POST：新增
+     * POST：新增
      */
     @ResponseBody
     @RequestMapping(value = "/users", method = RequestMethod.POST)
-    public String save(@RequestBody User user) {
-        System.out.println("user controller save ..." + user);
-        return "{'module': 'user save'}";
+    public ApiResult<String> save(@RequestBody User user) {
+        System.out.println("user controller save ==> " + user);
+        return ApiResult.ok("save a user ...");
     }
 
     /**
-     * @description DELETE：删除
+     * DELETE：删除
      */
     @ResponseBody
     @RequestMapping(value = "/users/{id}", method = RequestMethod.DELETE)
-    public String delete(@PathVariable Integer id) {
-        System.out.println("user controller delete ..." + id);
-        return "{'module': 'user delete'}";
+    public ApiResult<String> delete(@PathVariable Integer id) {
+        System.out.println("user controller delete ==> " + id);
+        return ApiResult.ok("delete a user ...");
     }
 
     /**
-     * @description PUT：更新
+     * PUT：更新
      */
     @ResponseBody
     @RequestMapping(value = "/users", method = RequestMethod.PUT)
-    public String update(@RequestBody User user) {
-        System.out.println("user controller update ..." + user);
-        return "{'module': 'user update'}";
+    public ApiResult<String> update(@RequestBody User user) {
+        System.out.println("user controller update ==> " + user);
+        return ApiResult.ok("update a user ...");
     }
 
     /**
-     * @description getById
+     * getById
      */
     @ResponseBody
     @RequestMapping(value = "/users/{id}", method = RequestMethod.GET)
-    public String getById(@PathVariable Integer id) {
-        System.out.println("user controller getById ..." + id);
-        return "{'module': 'user getById'}";
+    public ApiResult<String> getById(@PathVariable Integer id) {
+        System.out.println("user controller getById ==> " + id);
+        return ApiResult.ok("get a user by id ...");
     }
 
     @ResponseBody
     @RequestMapping(value = "/users", method = RequestMethod.GET)
-    public String getAll() {
-        System.out.println("user controller getAll ..." );
-        return "{'module': 'user getAll'}";
+    public ApiResult<String> getAllUsers() {
+        System.out.println("user controller getAllUsers ..." );
+        return ApiResult.ok("get all users ...");
     }
 }

@@ -6,8 +6,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 /**
  * @author loriyuhv
- * @date 2025/9/1 5:58
- * @description
+ * @version 1.0 2025/9/1 5:58
  */
 @EnableWebMvc
 @Configuration

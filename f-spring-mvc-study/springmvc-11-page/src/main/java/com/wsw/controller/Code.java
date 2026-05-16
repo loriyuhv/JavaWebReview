@@ -1,9 +1,10 @@
 package com.wsw.controller;
 
 /**
+ * 状态码
+ *
  * @author loriyuhv
- * @date 2025/9/1 6:15
- * @description 状态码
+ * @version 1.0 2025/9/1 6:15
  */
 public class Code {
     public static final Integer SAVE_OK = 20011;
@@ -17,5 +18,4 @@ public class Code {
 
     public static final Integer SYSTEM_TIME_OUT_ERR = 50002;
     public static final Integer SYSTEM_UNKNOWN_ERR = 59999;
-    public static final Integer BUSINESS_ERR = 60002;
 }

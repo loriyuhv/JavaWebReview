@@ -1,7 +1,7 @@
 package com.wsw.controller;
 
+import com.wsw.common.ApiResult;
 import com.wsw.domain.Book;
-import com.wsw.entity.ApiResponse;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -9,8 +9,7 @@ import java.util.List;
 
 /**
  * @author loriyuhv
- * @date 2025/8/31 13:19
- * @description
+ * @version 1.0 2025/8/31 13:19
  */
 @RestController
 @RequestMapping("/books")
@@ -39,22 +38,25 @@ public class BookController {
         books.add(book3);
     }
 
-    /**
-     * @description 保存
+    /***
+     * 保存图书控制器
+     * @param book 图书
+     * @return 响应
      */
     @PostMapping
-    public ApiResponse<Book> save(@RequestBody Book book) {
+    public ApiResult<Book> save(@RequestBody Book book) {
         System.out.println("book save ==> " + book);
         books.add(book);
-        return new ApiResponse<Book>(200, "book save success!!!", book);
+        return ApiResult.ok(book);
     }
 
-    /**
-     * @description 查询全部
+    /***
+     * 查询全部图书
+     * @return 图书列表
      */
     @GetMapping
-    public List<Book> getAll() {
+    public ApiResult<List<Book>> getAll() {
         System.out.println("book getAll is running ...");
-        return books;
+        return ApiResult.ok(books);
     }
 }

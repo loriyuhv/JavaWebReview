@@ -6,8 +6,7 @@ import java.util.List;
 
 /**
  * @author loriyuhv
- * @date 2025/9/1 6:02
- * @description
+ * @version 1.0 2025/9/1 6:02
  */
 public interface BookService {
     /**
@@ -37,6 +36,13 @@ public interface BookService {
      * @return 图书对象
      */
     Book findById(Integer id);
+
+    /**
+     * 通过图书name查找图书
+     * @param name 图书名称
+     * @return 图书对象
+     */
+    List<Book> findByName(String name);
 
     /**
      * 查找全部图书

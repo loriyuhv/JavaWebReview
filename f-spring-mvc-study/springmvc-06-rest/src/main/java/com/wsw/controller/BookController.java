@@ -1,44 +1,44 @@
 package com.wsw.controller;
 
+import com.wsw.common.ApiResult;
 import com.wsw.domain.Book;
 import org.springframework.web.bind.annotation.*;
 
 /**
  * @author loriyuhv
- * @date 2025/8/31 12:52
- * @description
+ * @version 1.0 2025/8/31 12:52
  */
 @RestController // @Controller + @ResponseBody
 @RequestMapping("/books")
 public class BookController {
 
     @PostMapping
-    public String save(@RequestBody Book book) {
-        System.out.println("save book ..." + book);
-        return "{'module': 'book save'}";
+    public ApiResult<String> save(@RequestBody Book book) {
+        System.out.println("save a book ==> " + book);
+        return ApiResult.ok("save a book ...");
     }
 
     @DeleteMapping("/{id}")
-    public String delete(@PathVariable Integer id) {
-        System.out.println("delete book ..." + id);
-        return "{'module': 'book delete'}";
+    public ApiResult<String> delete(@PathVariable Integer id) {
+        System.out.println("delete a book by id ==> " + id);
+        return ApiResult.ok("delete a book by id ...");
     }
 
     @PutMapping
-    public String update(@RequestBody Book book) {
-        System.out.println("update book ..." + book);
-        return "{'module': 'book update'}";
+    public ApiResult<String> update(@RequestBody Book book) {
+        System.out.println("update a book ==> " + book);
+        return ApiResult.ok("update a book ...");
     }
 
     @GetMapping("/{id}")
-    public String getById(@PathVariable Integer id) {
-        System.out.println("book getById..." + id);
-        return "{'module': 'book getById'}";
+    public ApiResult<String> getById(@PathVariable Integer id) {
+        System.out.println("get a book by id ==> " + id);
+        return ApiResult.ok("get a book by id ...");
     }
 
     @GetMapping
-    public String getAll() {
-        System.out.println("book getAll...");
-        return "{'module': 'book getAll'}";
+    public ApiResult<String> getAll() {
+        System.out.println("get all books ...");
+        return ApiResult.ok("get all books ...");
     }
 }

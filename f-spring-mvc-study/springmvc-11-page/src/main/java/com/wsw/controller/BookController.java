@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
+ * 统一每一个控制器方法返回值
+ *
  * @author loriyuhv
- * @date 2025/9/1 5:58
- * @description 统一每一个控制器方法返回值
+ * @version 1.0 2025/9/1 5:58
  */
 @RestController
 @RequestMapping("/books")
@@ -33,17 +34,28 @@ public class BookController {
     }
 
     @DeleteMapping("/{id}")
-    public Result<Boolean> delete(@PathVariable("id") Integer id) {
+    public Result<Boolean> delete(@PathVariable Integer id) {
+        long start = System.currentTimeMillis();
         Integer flag = bookService.delete(id);
+        long end = System.currentTimeMillis();
+        System.out.println("time:" + (end - start));
         return  new Result<>(flag > 0, flag > 0 ? Code.DELETE_OK : Code.DELETE_ERR);
     }
 
-    @GetMapping("/{id}")
-    public Result<Book> findById(@PathVariable("id") Integer id) {
+    @GetMapping("/id/{id}")
+    public Result<Book> findById(@PathVariable Integer id) {
         Book book = bookService.findById(id);
         Integer code = book != null ? Code.GET_OK : Code.GET_ERR;
         String message = book != null ? "" : "数据查询失败，请重试!";
         return new Result<>(book, code, message);
+    }
+
+    @GetMapping("/name/{name}")
+    public Result<List<Book>> findByName(@PathVariable String name) {
+        List<Book> books = bookService.findByName(name);
+        Integer code = books != null ? Code.GET_OK : Code.GET_ERR;
+        String message = books != null ? "" : "数据查询失败，请重试!";
+        return new Result<>(books, code, message);
     }
 
     @GetMapping
