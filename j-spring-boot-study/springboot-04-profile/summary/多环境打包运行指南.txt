@@ -1,0 +1,15 @@
+1. 项目打包前，必须先clean
+# 进入项目目录
+cd springboot-04-profile/
+mvn clean
+
+2. 打包
+mvn package
+
+3. 运行
+cd target/
+java -jar springboot-04-profile-0.0.1-SNAPSHOT.jar
+# 带参数启动SpringBoot
+java -jar springboot-04-profile-0.0.1-SNAPSHOT.jar --spring.profiles.active=test
+# 端口设置成8088
+java -jar springboot-04-profile-0.0.1-SNAPSHOT.jar --server.port=8088

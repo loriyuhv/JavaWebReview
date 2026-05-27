@@ -1,7 +1,7 @@
 # 设置启用环境
 spring:
   profiles:
-    active: test
+    active: dev
 
 ---
 # 开发环境
@@ -11,7 +11,9 @@ spring:
       on-profile: dev
 server:
   port: 8081
-
+logging:
+  level:
+    root: info
 ---
 # 生产环境
 spring:
@@ -20,7 +22,9 @@ spring:
       on-profile: pro
 server:
   port: 8082
-
+logging:
+  level:
+    root: info
 ---
 # 测试环境
 spring:
@@ -29,3 +33,6 @@ spring:
       on-profile: test
 server:
   port: 8083
+logging:
+  level:
+    root: warn
