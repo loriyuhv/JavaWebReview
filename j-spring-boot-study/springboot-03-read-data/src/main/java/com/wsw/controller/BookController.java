@@ -10,8 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author loriyuhv
- * @date 2025/9/2 10:07
- * @description
+ * @version 1.0 2025/9/2 10:07
  */
 @RestController
 @RequestMapping("/books")
