@@ -1,5 +1,5 @@
 <template>
-  <el-container class="layout-container" style="height: 95hv">
+  <el-container class="layout-container" style="height: 95vh">
     <el-header>图书管理系统</el-header>
     <el-main>
       <el-row>
@@ -92,12 +92,12 @@
   </el-container>
 </template>
 
-<script setup lang="ts" name="BookVue">
+<script setup lang="ts">
 import * as bookApi from '@/api'
-import { ref, reactive, nextTick } from 'vue'
+import { nextTick, reactive, ref } from 'vue'
 import type { Book, BookForm } from '@/types'
-import { ElMessage, ElLoading, ElMessageBox } from 'element-plus'
-import type { FormRules, FormInstance } from 'element-plus'
+import type { FormInstance, FormRules } from 'element-plus'
+import { ElLoading, ElMessage, ElMessageBox } from 'element-plus'
 
 /* 数据 */
 const queryBookName = ref('')
@@ -121,8 +121,7 @@ const rulesBookForm = reactive<FormRules<BookForm>>({
 // 查询全部图书
 const getAllBooks = async () => {
   try {
-    const data = await bookApi.getAllBooks()
-    bookList.value = data
+    bookList.value = await bookApi.getAllBooks()
   } catch {
     ElMessage.error('获取图书列表失败')
   }
@@ -132,12 +131,11 @@ const getAllBooks = async () => {
 const getBooksByName = async () => {
   if (!queryBookName.value) {
     ElMessage.warning('请输入图书名称, 否则查询全部图书')
-    getAllBooks()
+    await getAllBooks()
     return
   }
   try {
-    const data = await bookApi.getBooksByName(queryBookName.value)
-    bookList.value = data
+    bookList.value = await bookApi.getBooksByName(queryBookName.value)
   } catch {
     ElMessage.error('查询失败')
   }
@@ -229,7 +227,7 @@ const submitForm = async () => {
       }
       const res = await bookApi.addBook(addData)
       if (res.data) {
-        getAllBooks()
+        await getAllBooks()
       }
       ElMessage.success('新增图书成功')
     }
@@ -249,9 +247,11 @@ getAllBooks()
 </script>
 
 <style scoped>
-.layout-container .el-header {
+/*noinspection CssUnusedSymbol*/
+.layout-container :deep(.el-header) {
   position: relative;
 }
+/*noinspection CssUnusedSymbol*/
 :deep(.el-header) {
   box-shadow: 0 0 10px;
   border-radius: 12px;
@@ -261,17 +261,20 @@ getAllBooks()
   line-height: 60px;
   text-align: center;
 }
+/*noinspection CssUnusedSymbol*/
 :deep(.el-main) {
   border-radius: 12px;
-  padding: 10px 0px;
+  padding: 10px 0;
 }
 
-.el-button {
+/*noinspection CssUnusedSymbol*/
+:deep(.el-button) {
   margin-left: 20px;
   margin-bottom: 10px;
 }
 
+/*noinspection CssUnusedSymbol*/
 :deep(.el-input) {
-  margin: 0px 0px 10px 0px;
+  margin: 0 0 10px 0;
 }
 </style>
