@@ -9,7 +9,9 @@ spring:
       on-profile: dev
 server:
   port: 8081
-
+logging:
+  level:
+    root: info
 ---
 spring:
   config:
@@ -17,7 +19,9 @@ spring:
       on-profile: pro
 server:
   port: 8082
-
+logging:
+  level:
+    root: info
 ---
 spring:
   config:
@@ -25,3 +29,6 @@ spring:
       on-profile: test
 server:
   port: 8083
+logging:
+  level:
+    root: warn

@@ -8,7 +8,7 @@
         <groupId>org.springframework.boot</groupId>
         <!-- 单击进不去，可以重新导入该Maven项目以下 -->
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.13</version>
+        <version>3.5.14</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -29,9 +29,28 @@
         <module>springboot-03-read-data</module>
         <module>springboot-04-profile</module>
         <module>springboot-05-maven-and-boot-profile</module>
+        <module>springboot-06-config-file</module>
         <module>springboot-07-test</module>
         <module>springboot-08-mybatis</module>
         <module>springboot-09-ssm</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

@@ -4,9 +4,9 @@ server:
   port: 8080
 
 enterprise:
-  name: wsw
+  name: Alan
   age: 18
-  tel: 18370508206
+  tel: 18370544566
   subjects:
     - Java
     - C

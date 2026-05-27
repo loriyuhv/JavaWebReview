@@ -7,16 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author loriyuhv
- * @version 1.0 2025/9/2 9:49
+ * @version 1.0 2026/5/27 22:14
+ * @since 1.0
  */
 @RestController
 @RequestMapping("/books")
 public class BookController {
-
     @GetMapping("/{id}")
-    public String getById(@PathVariable String id) {
-        System.out.println("id ===> " + id);
-        return "Hello spring boot!";
+    public String getBook(@PathVariable String id) {
+        System.out.println("get book id: " + id);
+        return "get book id: " + id;
     }
-
 }

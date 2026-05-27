@@ -7,8 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author loriyuhv
- * @date 2025/9/2 11:25
- * @description
+ * @version 1.0 2025/9/2 11:25
  */
 @RestController
 @RequestMapping("/books")
