@@ -5,8 +5,7 @@ import com.wsw.service.impl.BookServiceImpl;
 
 /**
  * @author loriyuhv
- * @date 2025/8/26 14:27
- * @description
+ * @version 1.0 2025/8/26 14:27
  */
 public class App {
     public static void main(String[] args) {

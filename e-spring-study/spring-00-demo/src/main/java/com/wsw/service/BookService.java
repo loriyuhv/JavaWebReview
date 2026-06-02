@@ -2,8 +2,7 @@ package com.wsw.service;
 
 /**
  * @author loriyuhv
- * @date 2025/8/26 14:26
- * @description
+ * @version 1.0 2025/8/26 14:26
  */
 public interface BookService {
     void save();

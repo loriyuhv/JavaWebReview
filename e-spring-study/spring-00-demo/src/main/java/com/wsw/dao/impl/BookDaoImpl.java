@@ -3,9 +3,10 @@ package com.wsw.dao.impl;
 import com.wsw.dao.BookDao;
 
 /**
+ * BookDao接口实现类
+ *
  * @author loriyuhv
- * @date 2025/8/26 14:25
- * @description BookDao接口实现类
+ * @version 1.0 2025/8/26 14:25
  */
 public class BookDaoImpl implements BookDao {
     @Override

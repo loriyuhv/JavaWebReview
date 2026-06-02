@@ -6,8 +6,7 @@ import com.wsw.service.BookService;
 
 /**
  * @author loriyuhv
- * @date 2025/8/26 14:26
- * @description
+ * @version 1.0 2025/8/26 14:26
  */
 public class BookServiceImpl implements BookService {
 
